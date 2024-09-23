@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "ABVCalculator",
-    "slug": "ABVCalculator",
-    "version": "1.0.0",
+    "name": "ABV Value Calculator",
+    "slug": "abv-value-calculator",
+    "version": "1.2",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/ABV-Value-Calculator-Icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -18,7 +18,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.msaia.abvvaluecalculator"
     },
     "android": {
       "adaptiveIcon": {
@@ -28,6 +29,26 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "78f4a7c8-9386-4f6a-9558-81da538d3b16"
+      }
+    },
+    "owner": "msaia"
+  },
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-1985971607756371~1847954040",
+    "ios_app_id": "ca-app-pub-1985971607756371~8928367710"
   }
 }
